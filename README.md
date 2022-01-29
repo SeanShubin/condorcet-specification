@@ -6,7 +6,7 @@
 - You have the right to personally verify that your vote was tallied correctly
 - You have the right to be free from coercion in how you vote  This right is secured by implementing secret ballot
 - Limited only by the constraints necessarily imposed by secret ballot, you have the right to be maximally assured that your vote was not diluted by illegitimate votes
-- You have the right to express your preferences completely, by ranking all choices in your preferred order 
+- You have the right to have your complete preferences taken into account, by ranking all choices in your preferred order 
 - You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you  This right is secured by implementing the condorcet criterion 
 
 ## One example implementation of these voting rights
@@ -87,7 +87,7 @@
   - If there are more registered voters than live in the area, there is voter registration fraud 
   - You can detect duplicate ballot ids in the published final tally document
   - You can detect invalid ballot ids by comparing the ballot ids published during voter registration certification to the ballot ids published in the final tally  
-- You have the right to express your preferences completely, by ranking all choices in your preferred order
+- You have the right to have your complete preferences taken into account, by ranking all choices in your preferred order
   - When a choice between more than 2 outcomes is involved, your vote expresses your complete preference between them
   - This means your first choice, second choice, third choice, and so on, are recorded on your ballot
   - You can also rank outcomes the same if you have no preference between them
