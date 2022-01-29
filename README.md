@@ -9,43 +9,11 @@
 - You have the right to express your preferences completely, by ranking all choices in your preferred order 
 - You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you  This right is secured by implementing the condorcet criterion 
 
-## Individual Voting Rights in Detail
-- You have the right to personally verify that your vote was cast or not according to your choice
-  - Look up your private ballot id on the public list of ballots
-  - If your ballot id is there, your vote was cast
-  - If your ballot id is not there, your vote was not cast
-- You have the right to personally verify that your vote is accurate
-  - Look up your ballot by your private ballot id on the public list of ballots
-  - Compare it to the receipt you took home from the polling place on voting day
-  - If your ballot receipt matches its value on the public list of ballots, your ballot was recorded accurately
-  - If your ballot receipt does not match its value on the public list of ballots, your ballot was not recorded accurately
-- You have the right to personally verify that your vote was tallied correctly
-  - Perform the calculations from the public list of ballots yourself
-  - Anyone can download the public list of ballots from the internet
-  - This ensured the public list of ballots can not be altered after publication without everyone knowing about it
-  - Anyone can create and make available software to automate ballot counting 
-- You have the right to be free from coercion in how you vote, guaranteed by secret ballot
-  - There is no public way to connect your ballot to your voter registration, that is, it is a secret ballot election
-- Limited only by the constraints necessarily imposed by secret ballot, you have the right to be maximally assured that your vote was not diluted by illegitimate votes
-  - Check that the number of ballot ids for each jurisdiction matches the number of registered voters in that jurisdiction
-  - New ballot ids are generated and made public upon each election and voter registration
-  - Duplicate ballot ids indicate voter fraud and need to be discarded and audited
-  - Ballot ids that are made public after the election closes are invalid and need to be discarded
-  - A quantity of ballot ids from a jurisdiction that exceeds the number of registered voters in that jurisdiction,
-    indicates voter fraud systemic to that jurisdiction
-  - None of the ballots from that jurisdiction can be counted until an audit has determined which ballot ids come from registered voters and which do not
-  - Any registered voter can authenticate their ballot is valid by showing their receipt with their ballot id on it to an auditor
-- You have the right to express your preferences completely, by ranking all choices in your preferred order
-  - When a choice between more than 2 outcomes is involved, your vote expresses your complete preference between them
-  - This means your first choice, second choice, third choice, and so on, are recorded on your ballot
-  - You can also rank outcomes the same if you have no preference between them
-  - Outcomes you choose not to rank at all are considered less preferred than any outcomes you do rank
-- You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you
-  - You can vote your true preference without having to worry about impacting the results against your preferences
-  - For example, you should not have to vote for your second choice instead of your first choice,
-    because you are afraid not doing so will cause a preference below your second choice to win
-
-## One possible implementation of these voting rights
+## One example implementation of these voting rights
+- Note about cryptographic signatures
+  - Cryptographic signatures are not needed when the information is made public ahead of time
+  - However, for private information that might need to be audited later, such as addresses, the auditor needs to be able to verify the information was not changed after the fact
+  - Therefore, the cryptographic signatures of auditable private information need to be made public
 - Each district maintains a registry of voters
   - Adds new voters to the registry as they become eligible to vote
   - Removes voters from the registry as they become ineligible to vote
@@ -54,7 +22,6 @@
   - Ballot id are not reused, new ones are generated for each election
   - AUDITOR: Verify name matches address for each registered voter
   - AUDITOR: Verify each registered voter is eligible to vote in next election
-  - AUDITOR: Verify cryptographic signature of eligible voter name and address list
 - End voter registration certification for next election
   - No new names may be added to the eligible voter list for that election
   - No new ballot ids may be added for that election
@@ -96,3 +63,34 @@
   - The application of the people's will is beyond the scope of this voting system
   - The legitimacy of government is derived from the consent of the governed as codified in the constitution and expressed through the constitutions voting system
   - Should the government choose to act against the people, it is up to each executor of the governments will to refuse to enforce unconstitutional orders, and up to each individual to choose for themselves how they can most effectively resist illegitimate government    
+
+## How this example secures individual voting rights
+- You have the right to personally verify that your vote was cast or not according to your choice
+  - If you voted, you should find your ballot id on the public list of ballots cast
+  - If you did not vote, you should not find your ballot id on the public list of ballots cast
+  - In this way, you can detect if your ballot id becomes compromised and someone impersonates you at the polling place
+  - In this way, if you don't vote, you can detect if a corrupt individual at the polling place cast your vote
+- You have the right to personally verify that your vote is accurate
+  - Look up your ballot by your private ballot id on the public list of ballots
+  - Compare it to the receipt you took home from the polling place on voting day
+  - If your ballot receipt matches its value on the public list of ballots, your ballot was recorded accurately
+  - If your ballot receipt does not match its value on the public list of ballots, your ballot was not recorded accurately
+- You have the right to personally verify that your vote was tallied correctly
+  - Perform the calculations from the public list of ballots yourself
+  - Anyone can download the public list of ballots from the internet
+  - This ensured the public list of ballots can not be altered after publication without everyone knowing about it
+  - Anyone can create and make available software to automate ballot counting
+- You have the right to be free from coercion in how you vote, guaranteed by secret ballot
+  - When the poll worker separates your stub with your address and signature, from the rest of your ballot, your ballot has now been made secret
+- Limited only by the constraints necessarily imposed by secret ballot, you have the right to be maximally assured that your vote was not diluted by illegitimate votes
+  - You can check that the number of ballot ids for each jurisdiction matches the number of registered voters in that jurisdiction
+  - If there are more registered voters than live in the area, there is voter registration fraud 
+  - You can detect duplicate ballot ids in the published final tally document
+  - You can detect invalid ballot ids by comparing the ballot ids published during voter registration certification to the ballot ids published in the final tally  
+- You have the right to express your preferences completely, by ranking all choices in your preferred order
+  - When a choice between more than 2 outcomes is involved, your vote expresses your complete preference between them
+  - This means your first choice, second choice, third choice, and so on, are recorded on your ballot
+  - You can also rank outcomes the same if you have no preference between them
+  - Outcomes you choose not to rank at all are considered less preferred than any outcomes you do rank
+- You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you
+  - Each pair of candidates is compared according to your entire rankings, so preferences after your first are not thrown away
