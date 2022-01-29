@@ -26,9 +26,9 @@
   - No new names may be added to the eligible voter list for that election
   - No new ballot ids may be added for that election
   - Number of names must match number of ballot ids
-  - PUBLIC: Publish names of each registered voter eligible to vote in next election
-  - PUBLIC: Publish the ballot ids for that election
-  - PUBLIC: Publish the cryptographic signature of the names and addresses of eligible voters for that election 
+  - FOR-PUBLIC: Publish names of each registered voter eligible to vote in next election
+  - FOR-PUBLIC: Publish the ballot ids for that election
+  - FOR-PUBLIC: Publish the cryptographic signature of the names and addresses of eligible voters for that election 
   - The public can not associate a ballot id with a particular voter, but each voter will know which ballot id is theirs
 - Polls open
   - Polling places shall be geographically located such that every voter can make it to their polling place in person
@@ -43,7 +43,7 @@
   - No information from individual polling places will be transmitted until after polls close
   - The voting machines at each district will transmit all ballot information, including which ballot ids correspond to which selections, to the centralized voting system
   - Once all polling places have reported, the centralized voting system will consolidate all of this information into a single document, and cryptographically sign it
-  - PUBLIC: Publish a single, cryptographically signed, document, organized by jurisdiction, with ballot ids and corresponding selections, along with a list of names of voters that were eligible to vote, whether they voted or not  
+  - FOR-PUBLIC: Publish a single, cryptographically signed, document, organized by jurisdiction, with ballot ids and corresponding selections, along with a list of names of voters that were eligible to vote, whether they voted or not  
 - Vote certification
   - At this point, anyone in the world can tally what the results would be if every vote was legal, and voters can verify their vote was cast correctly
   - Now it is up to auditors to investigate any signs of fraud
@@ -57,7 +57,7 @@
   - AUDITOR: Respond to voters who notice their vote was not cast at all or not cast correctly, voters can prove this with their paper receipts
   - AUDITOR: Send an adjusted report to centralized voting system, so that it may be accounted for in the final tally
   - The central voting system will compute the final tally, rejecting duplicate ballot ids or ballot ids that were not listed during voter registration certification
-  - PUBLIC: Publish the final tally, cryptographically signed, which includes all publicly released information to this point, the fraud report, and the tally computed by the centralized voting system    
+  - FOR-PUBLIC: Publish the final tally, cryptographically signed, which includes all publicly released information to this point, the fraud report, and the tally computed by the centralized voting system    
 - Apply results
   - At this point the final tally is the best estimate of the will of the people
   - The application of the people's will is beyond the scope of this voting system
