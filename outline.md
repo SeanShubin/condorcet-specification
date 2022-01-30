@@ -1,0 +1,60 @@
+- processes
+    - voter registration certification
+        - district level
+            - voter eligibility is determined
+            - ballot id's unique to each eligible voter and election are sent out
+            - election information packet is sent out
+        - centralized
+            - voter registration report is published so than anyone may download it
+    - vote certification
+        - polling place
+            - after polling closes, send voting machine data to centralized voting system
+        - centralized
+            - "ballots cast report" is published so that anyone may download it
+        - polling place
+            - physical ballots are compared to the "ballots cast report" to ensure they match
+            - the number of physical ballots is compared to the number of ballot stubs to ensure they match
+            - discrepancies are reported to an auditor
+        - individual
+            - individuals compare their "ballot receipt" to the "ballots cast report" to ensure they match
+            - individuals may notify an auditor of discrepancies, and may use their "ballot receipt" as proof
+        - auditor
+            - investigates any reported discrepancies
+            - may verify physical ballot selections and ballot stubs
+- ballots
+    - ballot selections
+        - all voter selections are recorded on these pages
+        - printed out at polling place during voting hours
+        - printed on durable paper
+        - each page includes the ballot id
+    - ballot stub
+        - does not contain ballot id
+        - contains address and signature of voter
+    - ballot receipt
+        - contains all information from ballot selections and ballot stub
+- reports (all reports group their data by jurisdiction)
+    - voter registration report
+        - list of names of eligible voters for that election
+        - list of ballot ids
+        - cryptographic signature
+            - list of names and addresses of registered voters
+    - ballots cast report
+        - selections for each ballot id
+    - audited ballots report
+        - ballots that were missing from the ballots cast report, and reason why
+        - ballots that need to be stricken from the ballots cast report, and reason why
+- some possible reasons to add ballot
+    - ballot could not be transmitted to centralized voting system in time due to technical difficulties
+    - polling place found to be compromised in a way that allowed ballots to be suppressed or altered
+    - voter reported missing or altered ballot, confirmed by ballot receipt
+    - voter reported missing or altered ballot, confirmed by auditing physical ballots at polling place
+- some possible reasons to strike ballot
+    - duplicate ballot id's found, and this duplicate was not the valid one
+    - duplicate ballot id's found, and could not determine which one was the valid one
+    - ballot id not listed in voter registration report
+    - voter reported altered ballot, confirmed by ballot receipt
+    - voter reported altered ballot, confirmed by auditing physical ballots at polling place
+    - voter reported did not cast ballot, yet found their ballot id on the ballots cast report
+    - audit determined extra ballot id's were created due to voter registration fraud
+    - voter discovered to have been coerced
+    - voter discovered to have been bribed
