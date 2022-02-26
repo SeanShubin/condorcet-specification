@@ -44,7 +44,7 @@
   - The voting machines at each district will transmit all ballot information, including which ballot ids correspond to which selections, to the centralized voting system
   - Once all polling places have reported, the centralized voting system will consolidate all of this information into a single document, and cryptographically sign it
   - FOR-PUBLIC: Publish a single, cryptographically signed, document, organized by jurisdiction, with ballot ids and corresponding selections, along with a list of names of voters that were eligible to vote, whether they voted or not  
-- Vote certification
+- Begin vote certification
   - At this point, anyone in the world can tally what the results would be if every vote was legal, and voters can verify their vote was cast correctly
   - Now it is up to auditors to investigate any signs of fraud
   - AUDITOR: Ensure polling places that encountered technical problems are able to get all legally cast votes into the centralized voting system
@@ -58,7 +58,7 @@
   - AUDITOR: Send an adjusted report to centralized voting system, so that it may be accounted for in the final tally
   - The central voting system will compute the final tally, rejecting duplicate ballot ids or ballot ids that were not listed during voter registration certification
   - FOR-PUBLIC: Publish the final tally, cryptographically signed, which includes all publicly released information to this point, the fraud report, and the tally computed by the centralized voting system    
-- Apply results
+- End vote certification
   - At this point the final tally is the best estimate of the will of the people
   - The application of the people's will is beyond the scope of this voting system
   - The legitimacy of government is derived from the consent of the governed as codified in the constitution and expressed through the constitutions voting system
@@ -94,3 +94,27 @@
   - Outcomes you choose not to rank at all are considered less preferred than any outcomes you do rank
 - You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you
   - Each pair of candidates is compared according to your entire rankings, so preferences after your first are not thrown away
+
+### Ballot information
+- In custody of voter
+  - Ballot Page Receipt
+    - Copy of corresponding ballot page
+  - Ballot Stub Receipt
+    - Ballot Confirmation Number
+    - Voter Name
+    - Voter Address
+- In custody of local polling place
+  - Ballot Page
+    - Ballot confirmation number
+    - Page number
+    - How many pages total
+    - Selections for that page number
+  - Ballot Stub
+    - Voter Name
+    - Voter Address
+    - Voter Signature
+- In custody of local voter registration office
+  - Voter Registration
+    - Voter Name
+    - Voter Address
+  - List of ballot ids
