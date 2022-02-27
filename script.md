@@ -1,3 +1,4 @@
+## 01-intro (voting rights slide)
 Have you ever felt the pain of voting for the lessor of 2 evils,
 instead of a candidate that actually represented your interests but had no chance of winning?
 Do you find it frustrating when others won't vote for a better candidate because they feel it would be throwing their vote away?
@@ -13,6 +14,7 @@ I will demonstrate it to you, right now.
 For clarity, I have limited this demonstration to the very small scale of only 10 eligible voters,
 but this sound voting rights system works at any scale with only minor changes to the details. 
 
+## 02-ballot (ballot page)
 Have a look at this ballot.
 Here is your ballot confirmation.
 It is randomly generated, known only by you, and used by you alone for this election only.
@@ -34,6 +36,7 @@ Now lets look at the public tally of this election,
 but before we go there,
 remember your ballot confirmation starts with "AE", and ends with "93".
 
+## 03-ballot-accurate (tally page)
 Now that we are on the tally page,
 let's find your ballot confirmation.
 The only one that starts with "AE", and ends with "93",
@@ -50,6 +53,7 @@ the first place is Minor Improvements,
 the second place is Status Quo,
 and the third place is Radical Changes.
 
+## 04-first-pair (tally page)
 The results are calculated by comparing every possible pairing of candidates.
 From there we can find a total ordering of the candidates.
 With three candidates, as we have here, there are three possible pairings.
@@ -71,7 +75,7 @@ so this information would have been lost if we were only allowed to specify our 
 From here, we know that Minor Improvements must be ranked Higher than Status Quo,
 as 7 people prefer Minor Improvements while only 3 people prefer Status Quo.
 
-
+## 05-second-pair (tally page)
 Our second pairing is Minor Improvements vs. Radical Changes,
 let's count the votes for this pairing.
 The first 3 votes rank Minor Improvements at first place and Radical Changes at third place,
@@ -86,6 +90,7 @@ bringing the total to 6-4, favoring Minor Improvements.
 From here, we know that Minor Improvements must be ranked higher than Radical Changes,
 as 6 people prefer Minor Improvements while only 4 people prefer Radical Changes.
 
+## 06-third-pair (tally page)
 Our last pairing is Status Quo vs. Radical changes,
 and we compute this paring the same way we did with the first 2 pairings.
 The first 3 votes rank Status Quo at second place and Radical Changes at third place,
@@ -97,6 +102,7 @@ so we add 4 votes to radical changes,
 bringing the total to 6-4, in favor of Status Quo.
 From here, we know that Status Quo must be ranked higher than Radical Changes,
 
+## 07-total-ordering (tally page)
 Now that we have compared each candidate to each other candidate,
 we are ready to figure out the total ordering.
 Since Minor Improvements defeated Status Quo 7 to 3,
@@ -107,6 +113,7 @@ we know Status Quo must be in second place.
 Finally, since Radical Changes did not defeat any other candidate,
 Radical Changes goes into third and last place.
 
+## 08-listen (tally page)
 As obvious as it is that Minor Improvements is the best choice and Radical Changes is the worst choice given these votes,
 the exact opposite would have happened if we only counted the highest first place votes 
 instead of comparing the candidates in pairs.
@@ -124,6 +131,7 @@ giving the advantage to less appealing, yet more unique, candidates.
 However, if we have a sound voting system that takes the entirety of voter preferences into account,
 candidates have to listen to the people or risk being defeated by a third party candidate.
 
+## 09-details (tally page)
 As all ballots are public by ballot confirmation rather than voter identification,
 you can tally the votes yourself to ensure they were counted correctly,
 while still maintaining the secrecy of your ballot.
@@ -142,6 +150,7 @@ There are also ways to deal with unusual situations,
 such as ending up with a circular preference,
 that I have not gone over here.
 
+## 10-rights (voting rights slide)
 So what do I mean by the phrase "sound voting rights"? 
 I am specifically referring to these 7 voting rights, and all 7 of these voting rights are secured by the sound voting rights system that I have just demonstrated.
 - You have the right to personally verify that your vote was cast or not according to your choice
@@ -152,6 +161,7 @@ I am specifically referring to these 7 voting rights, and all 7 of these voting 
 - You have the right to have your complete preferences taken into account, by ranking all choices in your preferred order
 - You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you.  This right is secured by comparing the candidates in pairs.
 
+## 11-conclusion (voting rights slide)
 Having sound voting rights,
 both improves the way people vote,
 and the way politicians behave.
@@ -172,4 +182,3 @@ The ability to implement sound voting rights exists,
 they can be implemented incrementally, and at any scale,
 the ONLY thing stopping us from having this is knowledge that it is an option,
 and the will to demand that our leaders implement sound voting rights.
-
