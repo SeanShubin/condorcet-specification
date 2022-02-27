@@ -1,6 +1,6 @@
-# Secure Individual Voting Rights System
+# Sound Voting Rights System
 
-## Individual Voting Rights
+## Sound Voting Rights
 - You have the right to personally verify that your vote was cast or not according to your choice
 - You have the right to personally verify that your vote is accurate
 - You have the right to personally verify that your vote was tallied correctly
