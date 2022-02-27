@@ -1,30 +1,44 @@
-Have you ever wished you could vote for who you really wanted instead of the lessor of two evils?
+Have you ever wished you could vote for a politician that actually represented your interests,
+instead of the lessor of two evils?
 Do you find it frustrating when others won't vote for a better candidate because they feel it would be throwing their vote away?
-What if I can demonstrate a system of sound voting rights that fixes these problems?
+How about politicians who don't even bother representing your interests,
+because they know they can hold your vote hostage by pointing out how bad their alternative is?
+
+These problems all stem from not having a system of sound voting rights,
+that allows voters to sincerely and completely express their preferences,
+and then counts those votes in such a way such that their sincere vote always counts for them,
+rather than working against them.
+
+What if I told you that not only does a system of sound voting rights exist, but that I can demonstrate it to you right now?
+I will demonstrate sound voting rights at the very small scale of 10 eligible voters,
+but this sound voting rights system works at any scale with only minor changes to the details. 
 
 Have a look at this ballot.
-Here is your secret confirmation number.
+Here is your secret ballot confirmation number.
 It is randomly generated, known only by you, and used by you alone for this election only.
-And here is where you can express your preferences completely,
+We will need this number later.
+For now, just remember it starts with "AE", and ends with "93".
+In the "Edit Rankings" section, you can express your preferences completely,
 instead of being limited to only your first choice.
-In this case, the first place vote is for Minor Improvements,
-the second place vote is for Status Quo
-and the third and last place vote is for Radical changes.
+In this case, your first place vote is for Minor Improvements,
+your second place vote is for Status Quo
+and your third and last place vote is for Radical changes.
 So to be precise about what you are expressing here in this example,
 you are saying you prefer Minor Improvements over Status Quo,
 you prefer Minor Improvements over Radical Changes,
 and finally, you prefer Status Quo over Radical Changes.
 If you were only able to express your first choice,
 the information that you prefer Status Quo over Radical Changes would be thrown away,
-diminishing your voting rights.  
+compromising your voting rights because this part of your preference could not be taken into account when the votes are tallied.
 Now lets look at the public tally of this election,
 but before we go there,
-remember your confirmation number starts with D0, and ends with 8A.
+remember your ballot confirmation starts with "AE", and ends with "93".
 
 Now that we are on the tally page, let's find your confirmation number.
 Here it is among all the other ballots, the third one down.
-Every single ballot is available to the public,
-but since your confirmation number is private,
+To make sure anyone can verify for themselves that the votes were tallied correctly, 
+every single ballot is available to the public.
+However, since your ballot confirmation is private,
 no one knows which one is yours.
 You can verify right here that your ballot was counted accurately without sacrificing the secrecy of your ballot.
 As you can see, just like the ballot you cast,
@@ -95,29 +109,52 @@ all they have to do is frighten people into voting for them by demonizing their 
 However, if we have a sound voting system that takes the entirety of voter preferences into account,
 candidates have to listen to the people or risk being defeated by a third party candidate.
 
-As all ballots are public by confirmation number rather than voter identification,
+As all ballots are public by ballot confirmation rather than voter identification,
 you can tally the votes yourself to ensure they were counted correctly,
 while still maintaining the secrecy of your ballot.
 
 At the bottom of this example there is a list of everyone who voted,
 so that if you did not vote, your vote can not be stolen without your name showing up on this list.
-Votes can not be diluted either because the number of names must match the number of ballots.
+Votes can not be diluted either because we can demonstrate that the number of names must matches the number of ballots.
 
 This example relies on having a small list of known individuals,
 but there is no reason, in principle or in practice, that this can't be scaled to large countries,
 by changing the details of how voter privacy and vote auditability are balanced.
-The primary thing you have to get right is to make sure the number of registered voters matches the number of confirmation numbers,
-and that the confirmation numbers are shuffled before being mailed out so that only the voter knows their confirmation number.
+The primary thing you have to get right is to make sure the number of registered voters matches the number of ballot confirmations,
+and that the ballot confirmations are shuffled before being mailed out so that only the voter knows their ballot confirmation.
 
 There are also ways to deal with unusual situations,
 such as ending up with a circular preference,
 that I have not gone over here.
 
-So to summarize, here are 7 voting rights secured by this sound voting system.
+So what do I mean by the phrase "sound voting rights"? 
+I am specifically referring to these 7 voting rights, and all 7 of these voting rights are secured by the sound voting rights system that I have just demonstrated.
 - You have the right to personally verify that your vote was cast or not according to your choice
 - You have the right to personally verify that your vote is accurate
 - You have the right to personally verify that your vote was tallied correctly
 - You have the right to be free from coercion in how you vote  This right is secured by implementing secret ballot
 - Limited only by the constraints necessarily imposed by secret ballot, you have the right to be maximally assured that your vote was not diluted by illegitimate votes
 - You have the right to have your complete preferences taken into account, by ranking all choices in your preferred order
-- You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you  This right is secured by implementing the condorcet criterion
+- You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you.  This right is secured by comparing candidates in pairs.
+
+Having sound voting rights,
+both improves the way people vote,
+and the way politicians behave.
+
+No longer do you have to vote for the lessor of two evils,
+you can vote for the best candidate,
+and still be assured that your preference between the remaining candidates will be counted.
+                             
+No longer is it practical for politicians to demonize their primary opponent,
+once voters are free to express their true preference,
+ALL opponents must be accounted for.
+
+No longer can politicians afford to ignore third party candidates,
+once voters are empowered to express their preferences among ALL candidates,
+those politicians may suddenly discover it is them, that turned out to be the third party candidate.
+
+The ability to implement sound voting rights exists,
+they can be implemented incrementally, and at any scale,
+the ONLY thing stopping us from having this is knowledge that it is an option,
+and the will to demand that our leaders implement sound voting rights.
+

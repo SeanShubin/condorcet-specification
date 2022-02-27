@@ -7,7 +7,7 @@
 - You have the right to be free from coercion in how you vote  This right is secured by implementing secret ballot
 - Limited only by the constraints necessarily imposed by secret ballot, you have the right to be maximally assured that your vote was not diluted by illegitimate votes
 - You have the right to have your complete preferences taken into account, by ranking all choices in your preferred order 
-- You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you  This right is secured by implementing the condorcet criterion 
+- You have the right to vote honestly, without having to choose the lessor of two evils for fear your honest vote will work against you.  This right is secured by comparing candidates in pairs
 
 ## One example implementation of these voting rights
 - Note about cryptographic signatures
